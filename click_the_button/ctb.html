@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Click the Button!</title>
+	<script src="ctb.js" defer></script>
+	<style>
+	body {
+		background-color: black;
+	}
+	p { color:white; }
+	span { color:white; }
+	h1 { color:white; }
+	h2 { color:white; }
+	h3 { color:white; }
+	.clicki-img:hover {
+		cursor : pointer;
+	}
+	body { image-rendering: pixelated;}
+	</style>
+	
+</head>
+<body>
+	<h1 style="font-size: 64px; line-height: 3px">Click the Button!</h1>
+	<p id="splash" style="text-align:left; line-height: 3px; font-size: 24px">"gotta click click click!"</p>
+	
+	<section style="border: 2px solid black; background-image: url('button_bg.png'); background-repeat:" id="buttonSec">
+	<h2 id="numDisplay"  style="line-height: 3px">clicks: 0 :(</h2>
+	<h3 id="cpsDisplay" style="line-height: 3px">manual cps: 1; automatic cps: 0</h3>
+	<img src="button_unpressed.png" id="the_button" width="256" height="256" style="image-rendering: pixelated;" onclick="clickington()" class="clicki-img">
+	</section>
+
+	<section style="border: 2px solid black; background-image: url('wrench_bg.png');" id="upgSec">
+	<p style="text-align:left; line-height: 0px; font-size: 36px">upgrades!</p>
+	<p style="text-align:left; line-height: 0px; font-size: 20px">right click an upgrade to inspect it</p>
+	</section>
+	
+	<section style="border: 2px solid black; background-image: url('building_bg.png');" id="bldSec">
+	<p style="text-align:left; line-height: 0px; font-size: 36px">buildings!</p>
+	<p style="text-align:left; line-height: 0px; font-size: 20px">right click a building to inspect it</p>
+	<img src='bld_textures/cursor.png' style="image-rendering: pixelated; vertical-align: bottom">
+	<span> test</span>
+	<br>
+	<img src='bld_textures/cursor.png' style="image-rendering: pixelated">
+	<span> test</span>
+	
+	</section>
+	
+	<section style="text-align: center">
+	<p></p>
+	<img src="afi_logo.png" style="image-rendering: pixelated; width: 50%; height: 50%; object-fit: contain">
+
+	</section>
+	<section style="text-align: right">
+	<p style="color: black">a</p>
+	<p style="color: black">a</p>
+	<p style="color: black">a</p>
+	<p style="color: black">a</p>
+	<p style="color: black">a</p>
+	<p style="color: black">a</p>
+		<img src="ball.png" style="image-rendering: pixelated; width: 1%; height: 1%" onclick="ball()" id="ball" class="clicki-img">
+	</section>
+	
+	
+</body>
+</html>
